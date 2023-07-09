@@ -1,0 +1,43 @@
+
+
+.navbar {
+    background-color: rgba(var(--blackbean), 1);
+    font-size: 1.2em;
+    height: 5rem;
+    width: 100%;
+    color: rgba(var(--nyanza), 1);
+    position: fixed;
+    z-index: 55;
+}
+
+.logocontainer {
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+.logowrapper {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarwrapper {
+    display: flex;
+}
+
+
+.navbar li {
+    padding: 2rem;
+    transition: all .2s ease;
+}
+
+
+.navbaritem:hover {
+    background-color: rgba(var(--chestnut), 1);
+}
