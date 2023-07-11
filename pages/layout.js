@@ -6,13 +6,6 @@ import Footer from '../components/Footer.js'
 // import {motion} from 'framer-motion'
 
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'cafe example',
-  description: 'Lucas Liao\'s cafe',
-}
-
 export default function RootLayout({ children }) {
   return (
     <div>

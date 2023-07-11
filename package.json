@@ -14,7 +14,7 @@
     "next": "13.4.8",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "react-google-maps": "^9.4.5",
+    "react-google-maps": "^7.3.0",
     "react-google-maps-api": "^1.0.8",
     "reactstrap": "^9.2.0"
   }
