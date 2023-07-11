@@ -1,6 +1,6 @@
 
 import { useMemo, React } from "react";
-import { GoogleMap, MarkerF, LoadScript } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, LoadScript, useJsApiLoader } from "@react-google-maps/api";
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '/styles/Hours&Locations.module.css'
@@ -8,10 +8,13 @@ import {locations} from '/constants.js'
 
 export default function HoursLocations() {
 
-    
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+        libraries: ['geometry', 'drawing'],
+      });
 
     var center = useMemo(() => (locations[0].coordinates), []);
-
 
     const markers = locations.map(location => 
         <MarkerF position={location.coordinates}/> 
@@ -57,21 +60,12 @@ export default function HoursLocations() {
                 </div>
                 )}
             </div>
-            { window.google === undefined ? 
-            <LoadScript googleMapsApiKey= {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
                 <div className={styles.mapcontainer}>
-                    <GoogleMap zoom={13} center={center} mapContainerStyle={containerStyle}>
+
+                    {isLoaded && <GoogleMap zoom={13} center={center} mapContainerStyle={containerStyle}>
                         {markers}
-                    </GoogleMap>
+                    </GoogleMap>}
                 </div>
-            </LoadScript>
-            :         
-            <div className={styles.mapcontainer}>
-                <GoogleMap zoom={13} center={center} mapContainerStyle={containerStyle}>
-                    {markers}
-                </GoogleMap>
-            </div>
-            }       
         </div>
     </div>
     );
