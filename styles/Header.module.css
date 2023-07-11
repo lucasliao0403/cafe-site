@@ -8,6 +8,7 @@
     color: rgba(var(--nyanza), 1);
     position: fixed;
     z-index: 55;
+    border-bottom: 2px solid rgba(var(--nyanza), 1);;
 }
 
 .logocontainer {

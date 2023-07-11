@@ -1,12 +1,17 @@
 import React from 'react';
 import Image from 'next/image'
-
+import {motion, AnimatePresence} from 'framer-motion'
 import styles from '/styles/AboutUs.module.css'
 
 
 function AboutUs(props) {
     return (
         <div>
+            <AnimatePresence
+            mode="wait"
+            initial={false}
+            onExitComplete={() => window.scrollTo(0, 0)}
+            >
              <div className={styles.imagecontainer}>
                 <div className={styles.outerrectangle}> 
                     <div className={styles.innerrectangle}> 
@@ -76,6 +81,7 @@ function AboutUs(props) {
                     </div>
                 </div>
             </div>
+            </AnimatePresence>
         </div>
     );
 }
