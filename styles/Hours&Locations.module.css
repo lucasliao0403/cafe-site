@@ -45,7 +45,7 @@
 }
 
 .outerrectangle {
-    /* background-color: rgba(var(--moonstone), 0.5); */
+
 }
 
 .innerrectangle {
@@ -71,7 +71,8 @@
     height: 600px;
     padding: 0 1rem;
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebarcontent{
@@ -86,6 +87,7 @@
     height: 300px;
 }
 
+
 .card h1 {
     font-weight: 600;
     text-decoration: underline;
@@ -95,3 +97,41 @@
     text-decoration: underline;
 }
 
+
+@media (max-width: 767px){
+    .outerrectangle {
+        grid-template-columns: 80vw;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .mapcontainer {
+        width: 100vw; 
+        height: 600px;
+    }
+
+    .sidebar {
+        background-color: rgba(var(--blackbean), 1);
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card {
+        height: auto;
+        width: 85vw;
+    }
+
+    .card h1{
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

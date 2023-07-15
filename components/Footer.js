@@ -51,7 +51,9 @@ function Footer(props) {
             </div>
 
             <div className={styles.contact}>
-                (1)-888-888-8888
+                <p>
+                    (1)-888-888-8888
+                </p>
             </div>
         </div>
     );

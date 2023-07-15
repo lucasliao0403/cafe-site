@@ -48,4 +48,23 @@
     margin-right: 1rem;
 }
 
+@media (max-width: 767px){
+    .mediacontainer {
+        width: 110px;
+    }
 
+    .mediawrapper {
+        height: 30px;
+    }
+
+    .logowrapper {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin-left: 1rem;
+    }
+
+    .footer p {
+        font-size: .9rem;
+    }
+}

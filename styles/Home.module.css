@@ -34,7 +34,7 @@
 
 
 .innerrectangle1, .innerrectangle2, .innerrectangle3 {
-    padding: 4rem;
+    padding: 4rem 2rem;
     transition: all .3s ease;
 }
 
@@ -97,6 +97,20 @@
     color: rgba(var(--blackbean), 1);
 }
 
+@media (max-width: 767px){
+    .outerrectangle1, .outerrectangle2, .outerrectangle3 {
+        grid-template-columns: 80vw;
+        justify-content: center;
+    }
 
+    .innerrectangle1 h1, .innerrectangle2 h1, .innerrectangle3 h1 {
+        font-size: 3em;
+    }
+
+    .innerrectangle1 h2, .innerrectangle2 h2, .innerrectangle3 h2 {
+        font-size: 1.5em;
+    }
+    
+}
 
 

@@ -109,3 +109,9 @@
     background-color: rgba(var(--blackbean), .75);
     margin: auto;
 }
+
+@media (max-width: 767px){
+    .outerrectangle {
+        grid-template-columns: 80vw;
+    }
+}

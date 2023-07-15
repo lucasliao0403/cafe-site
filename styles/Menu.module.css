@@ -75,3 +75,9 @@
     text-align: center;
     font-size: 2rem;
 }
+
+@media (max-width: 767px){
+    .outerrectangle {
+        grid-template-columns: 80vw;
+    }
+}
