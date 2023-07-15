@@ -25,7 +25,7 @@ export default function Home() {
                         animate={{ x: 0 , y: 0, opacity: 1}}
                         transition={{ duration: .8, delay: 0}}
                         >
-                            <Link href="/">
+                            <Link href="./AboutUs">
                                 <div className={styles.innerrectangle1}> 
                                     <h1> Cafe Cafe </h1>
                                     <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
@@ -52,7 +52,7 @@ export default function Home() {
                     animate={{ x: 0 , y: 0, opacity: 1}}
                     transition={{ duration: .8, delay: 0}}
                     >
-                        <Link href='./AboutUs'>
+                        <Link href='./Menu'>
                             <div className={styles.innerrectangle2}> 
                                 <h1> Menu </h1>
                                 <h2> Coffee | Bakery | Lunch </h2>

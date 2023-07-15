@@ -20,6 +20,7 @@ function Burger(props) {
             <div className={styles.hamburgerwrapper}>
                 <div className={styles.hamburger} onClick={toggle}>
                     <div className={styles.iconwrapper}> 
+                        
                         <div className={styles.iconbar}/> 
                         <div className={styles.iconbar}/> 
                         <div className={styles.iconbar}/> 

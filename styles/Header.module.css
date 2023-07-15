@@ -24,7 +24,6 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    height: 77px;
 }
 
 .navbarwrapper {
@@ -34,9 +33,12 @@
 
 .navbar li {
     padding: 2rem;
-    transition: all .2s ease;
+    transition: background-color .2s ease;
 }
 
+.navbaritem {
+    height: 78px;
+}
 
 .navbaritem:hover {
     background-color: rgba(var(--chestnut), 1);
